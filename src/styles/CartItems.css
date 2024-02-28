@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .cart-item {
@@ -10,7 +11,6 @@
     display: flex;
     gap: 20px;
     border: 1px solid gray;
-    max-width: 600px;
 }
 
 .cart-item-qty {
