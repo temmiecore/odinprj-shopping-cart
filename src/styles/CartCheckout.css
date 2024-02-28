@@ -1,0 +1,26 @@
+.cart {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.cart-checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-items {
+    flex-shrink: 0.4;
+}
+
+
+
+.cart-checkout button {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 660px) {
+    .cart {
+        flex-direction: column;
+    }
+}

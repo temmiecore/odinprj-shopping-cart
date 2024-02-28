@@ -3,7 +3,7 @@ import "../../styles/StoreSection.css"
 
 function StoreSection({
    items,
-   handleAddingItemToCart, 
+   handleAddCartItem, 
   }) {
     return (
         <div className="store-section">
@@ -12,7 +12,7 @@ function StoreSection({
               return <Item 
               key={item.id}
               item={item} 
-              handleAddingItemToCart={handleAddingItemToCart}/>
+              handleAddCartItem={handleAddCartItem}/>
             })
           }
         </div>

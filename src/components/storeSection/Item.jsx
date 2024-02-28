@@ -3,7 +3,7 @@ import "../../styles/Item.css"
 
 function Item( {
     item,
-    handleAddingItemToCart,
+    handleAddCartItem,
 } ) {
     return <div className="store-item">
         <div className="item-image-container"><img src={item.image} alt={item.title + "photo"}/></div>
@@ -11,7 +11,7 @@ function Item( {
             <h3 className="item-name">{item.title}</h3>
             <h3 className="item-price">${item.price}</h3>
         </div>
-        <Button text="+ Add to cart" isLink={false} onClick={() => handleAddingItemToCart(item)}/>
+        <Button text="+ Add to cart" isLink={false} onClick={() => handleAddCartItem(item)}/>
     </div>
 }
 
