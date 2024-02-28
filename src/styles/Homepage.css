@@ -1,0 +1,22 @@
+.homepage {
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.homepage p {
+    max-width: 700px;
+}
+
+.homepage > div {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.homepage > div > button {
+    width: 120px;
+}

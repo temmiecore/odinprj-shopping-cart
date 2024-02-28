@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.header-title {
+    font-size: 1.4em;
+}
+
+.header-img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Nav isn't aligned with title and img? */
+header > div,
+nav {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+nav img {
+    width: 20px;
+}

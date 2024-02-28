@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
 :root {
-  
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.app {
+    margin: auto;
+    max-width: 1000px;
+    padding: 1em 1.5em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
