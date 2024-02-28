@@ -1,7 +1,12 @@
 header {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
+}
+
+header a {
+    display: flex;
+    align-items: center;
 }
 
 .header-title {
@@ -13,14 +18,35 @@ header {
     height: 30px;
 }
 
-/* Nav isn't aligned with title and img? */
-header > div,
-nav {
+header > div {
+    display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+nav {
     display: flex;
     gap: 20px;
 }
 
 nav img {
     width: 20px;
+}
+
+.nav-store {
+    font-size: 0.6em;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-cart {
+    position: relative;
+}
+
+small {
+    font-size: 0.7em;
+    position: absolute;
+    text-decoration: none;
+    left: 20px;
+    top: 10px;
 }

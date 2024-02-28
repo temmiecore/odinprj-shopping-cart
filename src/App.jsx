@@ -2,14 +2,24 @@ import { useEffect, useState } from 'react'
 import Header from './components/header/Header'
 import Homepage from './components/homepage/Homepage'
 import StoreSection from './components/storeSection/StoreSection'
+import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import Cart from './components/cart/Cart';
 
 // Change <a> tags to <links> in:
-// Button.jsx
 // Nav.jsx
 // Header.jsx
 
 function App() {
   const [items, setItems] = useState([]);
+  const [shoppingCartItems, setShoppingCartItems] = useState([]);
+
+  const handleAddingItemToCart = (item) => {
+    setShoppingCartItems(prevData => [
+      ...prevData,
+      item
+    ]);
+    console.log(shoppingCartItems);
+  };
 
   useEffect(()=>{
       fetch("https://fakestoreapi.com/products")
@@ -23,11 +33,17 @@ function App() {
   }, []);
 
   return (
-    <div className="app">
-    <Header headerTitle="Shop Name"/>
-    <div className="divider"></div>
-    <StoreSection items={items}/>
-    </div>
+    <Router >
+      <div className="app">
+        <Header headerTitle="Shop Name" shoppingCartItems={shoppingCartItems}/>
+        <div className="divider"></div>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/store" element={<StoreSection items={items} handleAddingItemToCart={handleAddingItemToCart} />} />
+            <Route path="/cart" element={<Cart shoppingCartItems={shoppingCartItems}/>} />
+          </Routes>
+      </div>
+    </Router>
   )
 }
 

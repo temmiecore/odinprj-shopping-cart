@@ -13,8 +13,8 @@ function Homepage() {
             This is not a real shop! This is a learning project. All the item data was taken from [some API]. You can't actually buy any of these. Oh well
         </p>
         <div>
-            <Button text="Start Shopping!" isLink={true} to="something"/>
-            <Button text="Log in" isLink={false} to=""/>
+            <Button text="Start Shopping!" isLink={true} to="store"/>
+            <Button text="Log in" isLink={false}/>
         </div>
     </div>
 }

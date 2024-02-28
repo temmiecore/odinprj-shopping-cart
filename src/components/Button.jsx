@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import "../styles/Button.css"
 
 function Button({ text, isLink, to, onClick }) {
     return <>
         { isLink 
         ? (
-            <a href={to}>
+            <Link to={to}>
                 <button onClick={onClick}>{text}</button>    
-            </a>    
+            </Link>    
         )
         : (
             <button onClick={onClick}>{text}</button>
