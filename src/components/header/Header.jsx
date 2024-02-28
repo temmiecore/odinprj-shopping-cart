@@ -8,7 +8,7 @@ function Header({
 }) {
     return <header>
         <div>
-            <Link to="/"><img className="header-img" src="src/assets/store.png" alt="header image"/></Link>
+            <Link to="store"><img className="header-img" src="src/assets/store.png" alt="header image"/></Link>
             <h1 className="header-title">{headerTitle}</h1>
         </div>
         <Nav shoppingCartItems={shoppingCartItems}/>

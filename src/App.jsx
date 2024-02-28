@@ -14,11 +14,26 @@ function App() {
   const [shoppingCartItems, setShoppingCartItems] = useState([]);
 
   const handleAddingItemToCart = (item) => {
-    setShoppingCartItems(prevData => [
-      ...prevData,
-      item
-    ]);
-    console.log(shoppingCartItems);
+    setShoppingCartItems(prevData => {
+      const alreadyAddedIndex = prevData.findIndex(toFind => toFind.id === item.id);
+      console.log(prevData);
+      if (alreadyAddedIndex === -1) {
+        return [
+          ...prevData,
+          {id:item.id, title:item.title, price:item.price, image:item.image, quantity:1}
+        ];
+      }
+      else {
+        return [
+          ...prevData.slice(0, alreadyAddedIndex),
+          {
+            ...prevData[alreadyAddedIndex], 
+            quantity: prevData[alreadyAddedIndex].quantity + 1 
+          },
+          ...prevData.slice(alreadyAddedIndex + 1) 
+        ];
+      }
+    });
   };
 
   useEffect(()=>{
