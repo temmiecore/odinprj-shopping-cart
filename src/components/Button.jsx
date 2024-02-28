@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "../styles/Button.css"
 
 function Button({ text, isLink, to, onClick }) {
     return <>

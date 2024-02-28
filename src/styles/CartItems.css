@@ -9,7 +9,7 @@
 .cart-item {
     padding: 1em;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     border: 1px solid gray;
 }
 
@@ -18,28 +18,29 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
-    font-size: 0.9em;
+    font-size: 1.3em;
 }
 
 .cart-item-qty input {
-    max-width: 60px;
+    font-size: 0.9em;
+    max-width: 100px;
 }
 
 .item-price {
     margin-top: 5px;
-    justify-self: end;
-    align-self: flex-end;
 }
 
 .cart-item-qty button {
     padding: 0;
-    width: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
 }
 
 .cart-item-image-container {
     align-self: center;
     display: flex;
     justify-content: center;
-    max-width: 100px;
-    height: 130px;
+    max-width: 150px;
+    height: 195px;
 }

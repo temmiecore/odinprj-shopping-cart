@@ -1,4 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
+import profile from "../../assets/profile.png";
+import cart from "../../assets/cart.png";
 
 function Nav({ shoppingCartItems }) {
     let location = useLocation();
@@ -15,10 +17,10 @@ function Nav({ shoppingCartItems }) {
             </Link>
 
             <Link to="profile">
-                <img src="src/assets/profile.png" alt="profile" />
+                <img src={profile} alt="profile" />
             </Link>
             <Link className="nav-cart" to="cart">
-                <img src="src/assets/cart.png" alt="shopping cart" />
+                <img src={cart} alt="shopping cart" />
                 <small>{countItems()}</small>
             </Link>
         </nav>

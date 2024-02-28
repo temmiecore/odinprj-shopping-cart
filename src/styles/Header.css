@@ -10,31 +10,31 @@ header a {
 }
 
 .header-title {
-    font-size: 1.4em;
+    font-size: 2em;
 }
 
 .header-img {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
 }
 
 header > div {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 nav {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 nav img {
-    width: 20px;
+    width: 30px;
 }
 
 .nav-store {
-    font-size: 0.6em;
+    font-size: 1em;
     color: black;
     text-decoration: none;
 }
@@ -44,14 +44,14 @@ nav img {
 }
 
 small {
-    font-size: 0.7em;
+    font-size: 1em;
     position: absolute;
     text-decoration: none;
-    left: 20px;
-    top: 10px;
+    left: 30px;
+    top: 20px;
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 500px) {
     .header-title {
         display: none;
     }
