@@ -1,0 +1,24 @@
+.store-item {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    justify-content: space-between;
+}
+
+.item-image-container {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.item-name,
+.item-price {
+    font-size: 0.9em;
+}
+
+.item-price {
+    color: #606060;
+}
