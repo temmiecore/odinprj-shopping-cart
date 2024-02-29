@@ -8,10 +8,11 @@
 
 .item-image-container {
     align-self: center;
-    display: flex;
-    justify-content: center;
-    height: 200px;
     margin-bottom: 10px;
+}
+
+.item-image-container img {
+    height: 200px;
 }
 
 .item-name,
